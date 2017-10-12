@@ -1,0 +1,59 @@
+body {
+    font-family: 'Vollkorn', serif;
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Vollkorn:400,400i,700,700i');
+
+.error {
+    color: red;
+}
+
+.thetitle {
+    text-align: center;
+    font-size: 45px;
+    color: black;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+}
+
+input[type=text],
+input[type=email] {
+    width: 400px;
+    font-size: 16px;
+    padding: 2px;
+}
+
+textarea {
+    width: 400px;
+    height: 200px;
+    font-size: 17px;
+    font-family: monospace;
+}
+
+input[type=submit] {
+    font-size: 24px;
+}
+
+hr {
+    margin: 20px auto;
+}
+
+nav {text-align: center;}
+
+nav ul {
+    padding: 0;
+    display: inline-block;
+    text-align: center;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+}

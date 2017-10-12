@@ -1,0 +1,35 @@
+-not just solar lidar, but wind points, just act as a good way to generate maps + share information. more interactive wind database
+
+-generate lidar map of launchcode place or other spots
+
+buy a laptop on the company dime
+
+build a sign-in and user system to manage drones, scans, maps, locations, osv
+
+provide stats as to the need within the industry - how much time a drone can save, how many more leads...etc
+
+describe the situation felt by a solar company owner..."you're swamped...trying to keep up"
+
+provide singular voice for the site/blog/etc
+
+market market market! ABM (always be marketing)
+-skyspecs brancehs out?
+-local solar companies? (to test MVP)
+-international COs
+-drone companies
+-WWS
+market research would be savvy!
+
+add a tack-on service to manipulate point clouds on my own
+
+todo: provide link page after uploading
+
+todo: integrate potree conversion to database
+
+todo: fix git situation
+
+todo: autogenerate ids
+
+todo: other database options - each user has their own clouds
+
+add user sign in?

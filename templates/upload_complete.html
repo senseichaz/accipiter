@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+<div class="bg-faded p-4 my-4">
+  <hr class="divider">
+  <h2 class="text-center text-lg text-uppercase my-0">
+  <strong>  Upload complete! </strong>
+  </h2>
+  <hr class="divider">
+
+<div align="center">
+
+Your file is located here: <a href="/uploads/notes.txt"> link text</a>
+
+</div>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+{% endblock %}

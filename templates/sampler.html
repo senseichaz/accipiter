@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+
+      <div class="bg-faded p-4 my-4">
+        <div class="card card-inverse">
+          <img class="card-img img-fluid w-100" src="/static/img/denmark.png" alt="">
+          <div class="card-img-overlay bg-overlay">
+            <h2 class="card-title text-shadow text-white text-uppercase mb-0">Denmark</h2>
+            <h4 class="text-shadow text-white">Colorized LIDAR for the entire country</h4>
+            <a href="http://potree.entwine.io/data/denmark.html" class="btn btn-secondary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-faded p-4 my-4">
+        <div class="card card-inverse">
+          <img class="card-img img-fluid w-100" src="/static/img/nyc.jpg" alt="">
+          <div class="card-img-overlay bg-overlay">
+            <h2 class="card-title text-shadow text-white text-uppercase mb-0">NYC</h2>
+            <h4 class="text-shadow text-white">High density modeling </h4>
+            <a href="http://potree.entwine.io/data/nyc.html" class="btn btn-secondary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-faded p-4 my-4">
+        <div class="card card-inverse">
+          <img class="card-img img-fluid w-100" src="/static/img/retz.png" alt="">
+          <div class="card-img-overlay bg-overlay">
+            <h2 class="card-title text-shadow text-white text-uppercase mb-0">Retz</h2>
+            <h4 class="text-shadow text-white">Micro-scale detailing</h4>
+            <a href="http://www.potree.org/showcase/retz.html" class="btn btn-secondary">Explore</a>
+          </div>
+        </div>
+      </div>
+      
+            <div class="bg-faded p-4 my-4">
+        <div class="card card-inverse">
+          <img class="card-img img-fluid w-100" src="/static/img/lion.png" alt="">
+          <div class="card-img-overlay bg-overlay">
+            <h2 class="card-title text-shadow text-white text-uppercase mb-0">Lion</h2>
+            <h4 class="text-shadow text-white"> Direct surface scanning</h4>
+            <a href="/lion_las.html" class="btn btn-secondary">Explore</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <!--<div class="bg-faded p-4 my-4">-->
+      <!--  <ul class="pagination justify-content-center mb-0">-->
+      <!--    <li class="page-item">-->
+      <!--      <a class="page-link" href="#">&larr; Older</a>-->
+      <!--    </li>-->
+      <!--    <li class="page-item disabled">-->
+      <!--      <a class="page-link" href="#">Newer &rarr;</a>-->
+      <!--    </li>-->
+      <!--  </ul>-->
+      <!--</div>-->
+
+    </div>
+    <!-- /.container -->
+
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+{% endblock %}

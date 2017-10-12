@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block head %}
+  {{ super() }}
+{% endblock %}
+
+
+{% block navbar %}
+  {{ super() }}
+{% endblock %}
+
+{% block content %}
+
+<div class="bg-faded p-4 my-4">
+  <hr class="divider">
+  <h2 class="text-center text-lg text-uppercase my-0">
+    Upload your drone scan directly
+  </h2>
+  <hr class="divider">
+
+<div align="center">
+  <form action = "http://localhost:5000/uploader" method = "POST"
+           enctype = "multipart/form-data">
+           <input type = "file" name = "file" />
+           <input type = "submit"/>
+  </form>
+</div>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block footer %}
+  {{ super() }}
+{% endblock %}
