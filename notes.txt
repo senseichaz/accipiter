@@ -22,14 +22,14 @@ market research would be savvy!
 
 add a tack-on service to manipulate point clouds on my own
 
-todo: provide link page after uploading
-
-todo: integrate potree conversion to database
-
-todo: fix git situation
-
-todo: autogenerate ids
-
 todo: other database options - each user has their own clouds
 
+todo: polishing
+
 add user sign in?
+
+database has a user with
+  point clouds
+    url
+    id
+    pagename

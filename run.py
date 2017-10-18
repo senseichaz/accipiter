@@ -25,10 +25,7 @@ class pcloud(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     pagename = db.Column(db.String(128))
 
-    #get the id to auto-generate
-
-    def __init__(self, id, pagename):
-        self.id = id
+    def __init__(self, pagename):
         self.pagename = pagename
 
 @app.route('/')
@@ -66,7 +63,13 @@ def cloud_viewer(pagename):
 # @app.route('/viewer/<int:id>')
 # def cloud_viewer(id):
 #
-#     return pcloud1.pagename
+#     return pcloud.query.all()
+
+@app.route('/viewall')
+def viewall():
+    print pcloud.query.filter_by(pagename='stadium-utm').first().id
+
+    return '1'
 
 @app.route('/potest')
 def cloud_generate(filename):
@@ -86,9 +89,9 @@ def cloud_generate(filename):
       # move pointcloud to static directory
       subprocess.call("mv ~/dev/accipiter/templates/converted/pointclouds/" + pagename + " ~/dev/accipiter/static/pointclouds/", shell=True )
 
-    #   pcloud1 = pcloud(id=10, pagename=pagename)
-    #   db.session.add(pcloud1)
-    #   db.session.commit()
+      pcloud1 = pcloud(pagename=pagename)
+      db.session.add(pcloud1)
+      db.session.commit()
 
       return pagename
 
