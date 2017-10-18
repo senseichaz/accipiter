@@ -26,6 +26,14 @@ todo: other database options - each user has their own clouds
 
 todo: polishing
 
+todo: page by page...clean em up
+
+todo: find more good (small) examples
+
+todo: better example for the front page (just a house please)
+
+todo: change the sampler setup
+
 add user sign in?
 
 database has a user with

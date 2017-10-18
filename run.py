@@ -60,11 +60,6 @@ def uplo():
 def cloud_viewer(pagename):
     return render_template("/converted/" + pagename)
 
-# @app.route('/viewer/<int:id>')
-# def cloud_viewer(id):
-#
-#     return pcloud.query.all()
-
 @app.route('/viewall')
 def viewall():
     print pcloud.query.filter_by(pagename='stadium-utm').first().id
@@ -102,7 +97,9 @@ def uploadconvert():
       f.save(os.path.join(app.config['UPLOAD_FOLDER'], secure_filename(f.filename)))
       pagename = cloud_generate(secure_filename(f.filename))
 
-   return 'your file ' + pagename + ' has been converted. View your ' + '<a href="http://localhost:5000/' + pagename + '.html">link</a>'
+      converted_url = "http://localhost:5000/" + pagename + ".html"
+  # return 'your file ' + pagename + ' has been converted. View your ' + '<a href="http://localhost:5000/' + pagename + '.html">link</a>'
+      return render_template("upload_complete.html", converted_url = converted_url)
 
 if __name__ == '__main__':
    db.create_all()
